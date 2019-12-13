@@ -1,0 +1,82 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.display-block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navbar {
+	height: 45px;
+	background-color: purple;
+	flex: 0 0 100%;
+	align-self: stretch;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 16px 32px;
+}
+
+/* Circle Hamburger Start*/
+.circle-hamburger {
+	display: flex;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: purple;
+	flex-wrap: wrap;
+	cursor: pointer;
+	align-content: center;
+	transition: all .5s;
+}
+
+.circle-hamburger div {
+	border: 2px solid white;
+	border-radius: 100px;
+	height: 6px;
+	width: 6px;
+	transition: all .5s;
+	transition-delay: .5s;
+}
+
+.circle-hamburger div:nth-of-type(1) {
+	margin: 3px 1px 1px 3px;
+}
+
+.circle-hamburger div:nth-of-type(2) {
+	margin: 3px 3px 1px 1px;
+}
+
+.circle-hamburger div:nth-of-type(3) {
+	margin: 1px 1px 3px 3px;
+}
+
+.circle-hamburger div:nth-of-type(4) {
+	margin: 1px 3px 3px 1px;
+}
+
+.circle-hamburger:hover {
+	transform: rotate(180deg);
+}
+
+.circle-hamburger:hover.circle-hamburger div:nth-of-type(1) {
+	transform: translate(-6px, -6px);
+}
+
+.circle-hamburger:hover.circle-hamburger div:nth-of-type(2) {
+	transform: translate(6px, -6px);
+}
+
+.circle-hamburger:hover.circle-hamburger div:nth-of-type(3) {
+	transform: translate(-6px, 6px);
+}
+
+.circle-hamburger:hover.circle-hamburger div:nth-of-type(4) {
+	transform: translate(6px, 6px);
+}
+
+/* Circle Hamburger End*/
