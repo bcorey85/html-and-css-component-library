@@ -1,0 +1,23 @@
+.btn-underline {
+	padding: 8px 16px;
+	background-color: lightgray;
+	color: white;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.btn-underline::after {
+	content: '';
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background-color: black;
+	transition: width .3s;
+}
+
+.btn-underline:hover::after {
+	width: 100%;
+}
