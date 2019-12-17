@@ -1,0 +1,44 @@
+.input-types {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-types div {
+	margin: 16px;
+}
+
+.input-types p {
+	margin: 0;
+}
+
+.sliding-placeholder .input-group {
+	position: relative;
+	background-color: white;
+}
+
+.sliding-placeholder input {
+	height: 32px;
+	width: 240px;
+	margin: 24px;
+}
+
+.sliding-placeholder label {
+	display: inline-block;
+	position: absolute;
+	left: 24px;
+	top: 34px;
+	padding: 0 8px;
+	transition: all .3s;
+	color: darkgray;
+}
+
+/* :placeholder-shown not supported by IE or Edge */
+.sliding-placeholder input:focus ~ label,
+.sliding-placeholder input:not(:placeholder-shown) ~ label {
+	font-size: 12px;
+	background-color: inherit;
+	top: 16px;
+	left: 28px;
+}
